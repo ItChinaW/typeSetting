@@ -1,0 +1,58 @@
+<template>
+  <div>
+    <top/>
+    <Nuxt/>
+    <bottom/>
+  </div>
+</template>
+
+<script>
+import Top from "./top/index"
+import Bottom from "./bottom/index"
+
+export default {
+  name: "index",
+  components: {
+    Top, Bottom
+  }
+}
+</script>
+
+<style>
+html {
+  font-family: 'Source Sans Pro',
+  -apple-system,
+  BlinkMacSystemFont,
+  'Segoe UI',
+  Roboto,
+  'Helvetica Neue',
+  Arial,
+  sans-serif;
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+a:visited{
+  color: #000;
+}
+</style>
